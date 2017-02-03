@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Geometri Calculator</string>
     <string-array name="geo_operator">
-    <item>Persegi</item>
-    <item>Segitiga</item>
-    <item>Lingkaran</item>
-    <item>Bola</item>
-    <item>Balok</item>
+        <item>Persegi</item>
+        <item>Segitiga</item>
+        <item>Lingkaran</item>
+        <item>Bola</item>
+        <item>Balok</item>
     </string-array>
 
 </resources>

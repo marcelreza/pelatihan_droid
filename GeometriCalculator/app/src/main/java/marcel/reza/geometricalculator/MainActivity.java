@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             hasil += "Volume Balok adalah "+(inp1*inp2*inp3);
         } else {
             hasil = "Luas Permukaan Bola adalah " +(4*Math.PI*inp1*inp1)+"\n";
-            hasil += "Keliling Persegi adalah ";
+            hasil += "Volume Bola adalah "+((4/3)*Math.PI*inp1*inp1*inp1)+"\n";
         }
         TextView result = (TextView) findViewById(R.id.result);
         result.setText(hasil);
