@@ -37,5 +37,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA,"map");
         startActivity(intent);
     }
+    public void sendEmail (View view){
+        Intent intent = new Intent(this,IntentExecutor.class);
+        intent.putExtra(EXTRA,"email");
+        startActivity(intent);
+    }
 }
 
