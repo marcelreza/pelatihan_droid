@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:stretchColumns="0"
+    tools:context="marcel.reza.shopreceipt.MainActivity">
+
+   <TableRow>
+       <TextView  android:text="TV"/>
+       <EditText android:id="@+id/tv_num"
+           android:layout_width="100dp"/>
+   </TableRow>
+    <TableRow>
+        <TextView android:text="Kipas"/>
+        <EditText android:id="@+id/kipas_num"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Vacum"/>
+        <EditText android:id="@+id/vacum_num"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="AC"/>
+        <EditText android:id="@+id/ac_num"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="CCTV"/>
+        <EditText android:id="@+id/cctv_num"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="DVD Player"/>
+        <EditText android:id="@+id/dvd_num"/>
+    </TableRow>
+    <TableRow>
+        <Button android:text="Cetak Faktur"
+        android:layout_span="2"
+            android:onClick="printReceipt"/>
+    </TableRow>
+</TableLayout>

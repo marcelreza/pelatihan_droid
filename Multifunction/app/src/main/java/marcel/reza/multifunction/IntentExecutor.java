@@ -23,9 +23,11 @@ public class IntentExecutor extends AppCompatActivity {
             btn.setText("Buka Browser");
         }else if (operator.equals("phone")){
             btn.setText("Hubungi No telp");
-        }else if (operator.equals("map"))
+        }else if (operator.equals("map")){
             btn.setText("Buka Peta");
-    }
+        } else if (operator.equals("email"))
+            btn.setText("Buka Email");
+        }
     public void execute(View view){
         Intent exeIntent = null;
         EditText txtExec = (EditText) findViewById(R.id.text_exec);
@@ -39,6 +41,9 @@ public class IntentExecutor extends AppCompatActivity {
         }else if (operator.equals("map")){
             Uri gmmIntentUri = Uri.parse("geo:"+exec);
             exeIntent = new Intent(Intent.ACTION_VIEW,gmmIntentUri);
+        }else if (operator.equals("email")){
+            Uri email = Uri.parse("email :"+exec);
+            exeIntent = new Intent(Intent.ACTION_SEND,email);
         }
         startActivity(exeIntent);
     }
