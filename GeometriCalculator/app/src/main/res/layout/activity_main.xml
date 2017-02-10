@@ -51,11 +51,13 @@
         android:text="Lebar"/>
     <EditText
         android:id="@+id/input3"
-        android:layout_below="@id/input2"
-        android:layout_aliFgnParentRight="true"
+        android:layout_alignParentRight="true"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/input2"
+        android:layout_alignRight="@+id/btn_calc"
+        android:layout_alignEnd="@+id/btn_calc" />
 
     <TextView
         android:id="@+id/txt3"
