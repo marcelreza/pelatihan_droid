@@ -39,6 +39,6 @@ public class Terserah extends AppCompatActivity {
         dbHelper.insertTransaksi(nama,jenis,jumlah,keterangan);
         Log.d("form transaksi",nama+"-"+Integer.toString(jenis)+" - "+Integer.toString(jumlah)+" - "+keterangan);
                 Toast.makeText(this, "Transaksi"+nama+"Berhasil disimpan",Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(this, MainActivity.class));
+        finish();
     }
 }
